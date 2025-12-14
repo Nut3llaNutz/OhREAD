@@ -160,7 +160,7 @@ const BookCard = ({ book, onAdd, index = 0 }) => {
                 <p style={{ color: '#cbd5e1', fontSize: '0.8rem', flex: 1, overflow: 'hidden' }}>{description}</p>
 
                 <button
-                    onClick={() => { if (!isAdded) { onAdd(book); setIsAdded(true); } }}
+                    onClick={() => { if (!isAdded) { onAdd({ ...book, coverImage: imageSrc || book.coverImage }); setIsAdded(true); } }}
                     style={{
                         marginTop: '1rem', padding: '0.8rem', width: '100%',
                         background: isAdded ? 'transparent' : 'var(--green-brand)',

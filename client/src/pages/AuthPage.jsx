@@ -39,7 +39,7 @@ const AuthPage = () => {
         <div className="snap-container">
             {/* SECTION 1: MAIN AUTH FORM */}
             <section className="snap-section aurora-bg">
-                <div className="glass-panel" style={{ padding: '2.5rem', width: '100%', maxWidth: '450px' }}>
+                <div className="glass-panel auth-panel">
                     <h2 style={{ fontSize: '2rem', marginBottom: '1.5rem', textAlign: 'center', color: 'var(--navy-brand)' }}>
                         {isLogin ? 'Welcome Back' : 'Create Account'}
                     </h2>

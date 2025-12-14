@@ -53,7 +53,7 @@ const RecommendationPage = () => {
         try {
             const config = { headers: { Authorization: `Bearer ${user.token}` } };
             // Ensure we send a valid object, stripping nulls if needed or backend handles it
-            const payload = { ...book, coverImage: '' }; // backend or BookCard logic handles cover usually, but simple payload is safe
+            const payload = { ...book }; // backend or BookCard logic handles cover usually, but simple payload is safe
             await axios.post(`${API_URL}/books`, payload, config);
         } catch (error) {
             const msg = error.response?.data?.message || 'Error adding book';

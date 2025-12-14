@@ -394,3 +394,27 @@ button {
     background-position: 0% 50%;
   }
 }
+
+/* Navbar Mobile Tweaks */
+@media (max-width: 768px) {
+  /* Scale down the big primary button in navbar */
+  nav .btn-primary {
+    padding: 0.6rem 1rem !important;
+    font-size: 0.9rem !important;
+  }
+}
+
+/* Auth Page Mobile Optimizations */
+.auth-panel {
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 450px;
+}
+
+@media (max-width: 480px) {
+  .auth-panel {
+    padding: 1.5rem !important;
+    margin: 1rem;
+    width: auto !important; 
+  }
+}

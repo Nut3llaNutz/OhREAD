@@ -208,7 +208,7 @@ const LandingPage = () => {
                     fontSize: '0.9rem',
                     letterSpacing: '1px',
                     pointerEvents: 'none',
-                    display: window.innerWidth < 768 ? 'none' : 'block' // Hide on mobile to clean up UI
+                    display: 'block' // Always visible
                 }}>
                     SCROLL TO EXPLORE
                 </div>
